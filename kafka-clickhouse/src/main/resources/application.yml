@@ -41,16 +41,16 @@ spring:
             initial-size: 10
             min-idle: 10
             max-active: 20
-#        mysql:
-#          driver-class-name: com.mysql.cj.jdbc.Driver
-#          type: com.alibaba.druid.pool.DruidDataSource
-#          url: jdbc:mysql://111.229.66.196:3306/ttms?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
-#          username: root
-#          password: password
-#          druid: # 以下是单独每个库的设置，默认会使用全局的配置
-#            initial-size: 3
-#            min-idle: 3
-#            max-active: 10
+        mysql:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          type: com.alibaba.druid.pool.DruidDataSource
+          url: jdbc:mysql://111.229.66.196:3306/ttms?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+          username: root
+          password: password
+          druid: # 以下是单独每个库的设置，默认会使用全局的配置
+            initial-size: 3
+            min-idle: 3
+            max-active: 10
     # druid监控配置，需要引入druid-spring-boot-starter依赖而非druid依赖，否则不生效
     # 页面地址：http://127.0.0.1:9394/druid/sql.html
     druid:
